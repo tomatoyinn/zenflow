@@ -1,0 +1,108 @@
+        /* Hero Section */
+        .first-hero{
+          margin-top: 60px;
+        }
+        .hero-img-container {
+            width: 300px;
+            height: 390px;
+            position: relative;
+            gap: 20%;
+            overflow: hidden;
+            border-radius: 20px;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+            transition: all 0.5s ease;
+        }
+        
+        .hero-img-container:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+        
+        .hero-img-container img {
+            transition: transform 0.5s ease;
+            border-radius: 20px;
+        }
+        
+        .hero-img-container:hover img {
+            transform: scale(1.03);
+        }
+        
+        /* Mindful Jar Section */        
+        .jar-steps {
+            counter-reset: step-counter;
+        }
+        
+        .jar-step {
+            position: relative;
+            padding-left: 50px;
+            margin-bottom: 25px;
+        }
+        
+        .jar-step:before {
+            counter-increment: step-counter;
+            content: counter(step-counter);
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 35px;
+            height: 35px;
+            background: #ACC572;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+        
+        /* Accordion Customization */
+        .accordion-button:not(.collapsed) {
+            background-color: rgba(172, 197, 114, 0.1);
+            color: #A76545;
+        }
+        
+        .accordion-button:focus {
+            box-shadow: none;
+        }
+
+        
+        /* Floating Animation */
+        .float-animate {
+            animation: float 6s ease-in-out infinite;
+        }
+        
+        /* pic for tabs */
+        /* .img-fluid{
+            height: 250px;
+                    margin-bottom: 90px;
+            border-radius: 0.5rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        } */
+
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+            100% { transform: translateY(0px); }
+        }
+        
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            .hero-text {
+                text-align: center;
+            }
+            
+            .hero-btn {
+                display: flex;
+                justify-content: center;
+            }
+            .img-jar{
+                width: 90%;
+                height: auto;
+                justify-self: center;
+                display: flex;
+            }
+            .hero{
+                height: 800%;
+            }
+        }
+          

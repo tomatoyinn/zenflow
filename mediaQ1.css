@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+.card-body{
+    height: 230px;
+}
+
+.about-us {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 3rem 2rem;
+}
+
+.about-us h2 {
+    font-weight: 700;
+    color: #2c3e50;
+}
+
+.team-member {
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.team-member:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+}
+
+.team-member img {
+    height: 300px;
+    object-fit: cover;
+    border-bottom: 5px solid #2c3e50;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #7f8c8d;
+}
+
+.text-muted {
+    font-size: 0.9rem;
+    color: #95a5a6;
+}
+
+/* Vision and Mission */
+.vision-mission {
+    background-color: #ecf0f1;
+    padding: 2rem;
+    border-radius: 12px;
+    margin-top: 2rem;
+}
+
+.vision-mission h2 {
+    font-weight: 700;
+    color: #2c3e50;
+}
+
+.vision-mission h3 {
+    font-size: 1.5rem;
+    color: #2980b9;
+}
+
+.vision-mission p {
+    font-size: 1rem;
+    color: #34495e;
+    margin-top: 0.5rem;
+}
+
+  

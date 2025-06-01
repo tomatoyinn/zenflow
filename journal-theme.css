@@ -1,0 +1,42 @@
+.journal-text {
+  color: #28a745; /* bootstrap success green */
+}
+
+.journal-card {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  color: #212529;
+}
+
+.journal-card label {
+  color: #212529;
+}
+
+.form-control {
+  background-color: #fff;
+  border: 1px solid #28a745;
+  color: #212529;
+}
+
+.form-control:focus {
+  background-color: #fff;
+  border-color: #218838;
+  color: #212529;
+  box-shadow: 0 0 8px #218838;
+}
+
+.btn-success {
+  background-color: #28a745;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-success:hover {
+  background-color: #218838;
+  color: #fff;
+}
+
+footer {
+  background-color: #f8f9fa;
+  color: #6c757d;
+}

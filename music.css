@@ -1,0 +1,89 @@
+body {
+  background: #f8f9fa;
+  padding-top: 70px; /* for navbar space */
+}
+
+.card {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.card img {
+  height: 180px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 1rem;
+}
+
+.card-nature {
+  background: #2a9d8f; /* teal */
+}
+
+.card-classical {
+  background: #e76f51; /* coral */
+}
+
+.card-binaural {
+  background: #264653; /* dark blue */
+}
+
+.card-white-noise {
+  background: #6c757d; /* gray */
+}
+
+.btn-light {
+  color: #333;
+  font-weight: 600;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-body {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-body p {
+  margin-bottom: 1.5rem; /* space between text and button */
+}
+
+.btn-light {
+  align-self: center; /* center the button horizontally */
+}
+.btn-light {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-light:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+/* Card Animation */
+.music-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.music-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Button Animation */
+.btn-light {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-light:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}

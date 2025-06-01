@@ -1,0 +1,99 @@
+*{
+  font-family: 'Quicksand', sans-serif;
+}
+
+.book-card {
+  height: 580px;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  margin-bottom: 80px;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+.book-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+  background-color: #f8f9fa; 
+}
+
+.book-card:hover img {
+  transform: none;
+}
+
+
+.book-card .card-title {
+  transition: color 0.3s ease;
+}
+
+.book-card:hover .card-title {
+  color: #007bff;
+}
+
+.book-card img {
+  transition: all 0.4s ease;
+  border-radius: 10px 10px 0 0;
+}
+
+.card-img-top {
+  height: 400px;
+  object-fit: cover;
+}
+
+.book-card .btn {
+  transition: all 0.3s ease;
+  border: 2px solid #28a745;
+  color: #28a745;
+  background-color: transparent;
+  font-weight: 500;
+}
+
+.book-card .btn:hover {
+  background-color: #28a745;
+  color: white;
+  transform: none;
+  border-color: #28a745;
+}
+
+
+.book-card .card-text {
+  color: #5cb85c; 
+  font-style: italic;
+  margin-bottom: 15px;
+}
+
+.modal-body img {
+  display: none;
+}
+
+
+.modal-body {
+  padding: 25px;
+}
+
+.modal-body p {
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.modal-header {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.modal-title {
+  font-weight: 600;
+  color: #7d4242;
+}
+
+
+.modal-footer .btn-secondary {
+  background-color: #305e88;
+  border: none;
+}
+
+.modal-footer .btn-secondary:hover {
+  background-color: #1d2f3f;
+}

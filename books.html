@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Books - Mindful Moments</title>
+  <link rel="icon" href="fevicon.png">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="nav.css" />
+  <link rel="stylesheet" href="footer.css">
+  <link rel="stylesheet" href="books-theme.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top glassy-navbar">
+    <div class="container">
+    <a class="navbar-brand" href="index.html"><img style="width: 35px; height: auto; padding: 0px;" src="logo.png" alt=""></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navContent">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">Explore</a>
+          <ul class="dropdown-menu">
+              <li><a href="music.html" class="dropdown-item">Music</a></li>
+              <li><a href="books.html" class="dropdown-item">Book</a></li>
+              <li><a href="journal.html" class="dropdown-item">Journal</a></li>
+              <li><a href="tips.html" class="dropdown-item">T&T</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="aboutus.html">About Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="SignIn.html">Sign In</a></li>
+      </ul>
+    </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <section class="hero text-center py-5 mt-5" style="font-family: 'Quicksand', sans-serif;">
+    <div class="container">
+      <h1 class="display-5 fw-bold" style="color: #2a5d2a;">Book Recommendation</h1>
+      <p class="lead binaural-text">Healing begins with a good book.</p>
+    </div>
+  </section>
+
+  <div class="container py-5">
+    <div class="row">
+        <!-- Card 1 -->
+        <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card book-card" data-bs-toggle="modal" data-bs-target="#modal1">
+                <img src="b1.jpg" class="card-img-top" alt="The Miracle of Mindfulness">
+                <div class="card-body">
+                    <h5 class="card-title">The Miracle of Mindfulness</h5>
+                    <p class="card-text">Thich Nhat Hanh</p>
+                    <button class="btn btn-primary">Read More</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card book-card" data-bs-toggle="modal" data-bs-target="#modal2">
+                <img src="b2.jpg" class="card-img-top" alt="Wherever You Go, There You Are">
+                <div class="card-body">
+                    <h5 class="card-title">Wherever You Go, There You Are</h5>
+                    <p class="card-text">Jon Kabat-Zinn</p>
+                    <button class="btn btn-primary">Read More</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card book-card" data-bs-toggle="modal" data-bs-target="#modal3">
+                <img src="b3.jpg" class="card-img-top" alt="Mindfulness in Plain English">
+                <div class="card-body">
+                    <h5 class="card-title">Mindfulness in Plain English</h5>
+                    <p class="card-text">Henepola Gunaratana</p>
+                    <button class="btn btn-primary">Read More</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card book-card" data-bs-toggle="modal" data-bs-target="#modal4">
+                <img src="b4.jpg" class="card-img-top" alt="Full Catastrophe Living">
+                <div class="card-body">
+                    <h5 class="card-title">Full Catastrophe Living</h5>
+                    <p class="card-text">Jon Kabat-Zinn</p>
+                    <button class="btn btn-primary">Read More</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+      <!-- Card 5 -->
+      <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card book-card" data-bs-toggle="modal" data-bs-target="#modal5">
+              <img src="b5.jpg" class="card-img-top" alt="The Power of Now">
+              <div class="card-body">
+                  <h5 class="card-title">The Power of Now</h5>
+                  <p class="card-text">Eckhart Tolle</p>
+                  <button class="btn btn-primary">Read More</button>
+              </div>
+          </div>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card book-card" data-bs-toggle="modal" data-bs-target="#modal6">
+              <img src="b6.jpg" class="card-img-top" alt="Radical Acceptance">
+              <div class="card-body">
+                  <h5 class="card-title">Radical Acceptance</h5>
+                  <p class="card-text">Tara Brach</p>
+                  <button class="btn btn-primary">Read More</button>
+              </div>
+          </div>
+      </div>
+
+      <!-- Card 7 -->
+      <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card book-card" data-bs-toggle="modal" data-bs-target="#modal7">
+              <img src="b7.jpg" class="card-img-top" alt="Peace Is Every Step">
+              <div class="card-body">
+                  <h5 class="card-title">Peace Is Every Step</h5>
+                  <p class="card-text">Thich Nhat Hanh</p>
+                  <button class="btn btn-primary">Read More</button>
+              </div>
+          </div>
+      </div>
+
+      <!-- Card 8 -->
+      <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card book-card" data-bs-toggle="modal" data-bs-target="#modal8">
+              <img src="b8.jpg" class="card-img-top" alt="The Untethered Soul">
+              <div class="card-body">
+                  <h5 class="card-title">The Untethered Soul</h5>
+                  <p class="card-text">Michael A. Singer</p>
+                  <button class="btn btn-primary">Read More</button>
+              </div>
+          </div>
+      </div>
+    </div>
+    <div class="row">
+    <!-- Card 9 -->
+    <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card book-card" data-bs-toggle="modal" data-bs-target="#modal9">
+            <img src="b9.jpg" class="card-img-top" alt="10% Happier">
+            <div class="card-body">
+                <h5 class="card-title">10% Happier</h5>
+                <p class="card-text">Dan Harris</p>
+                <button class="btn btn-primary">Read More</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card 10 -->
+    <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card book-card" data-bs-toggle="modal" data-bs-target="#modal10">
+            <img src="b10.jpg" class="card-img-top" alt="The Headspace Guide to Meditation and Mindfulness">
+            <div class="card-body">
+                <h5 class="card-title">The Headspace Guide</h5>
+                <p class="card-text">Andy Puddicombe</p>
+                <button class="btn btn-primary">Read More</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card 11 -->
+    <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card book-card" data-bs-toggle="modal" data-bs-target="#modal11">
+            <img src="b11.jpg" class="card-img-top" alt="Real Happiness">
+            <div class="card-body">
+                <h5 class="card-title">Real Happiness</h5>
+                <p class="card-text">Sharon Salzberg</p>
+                <button class="btn btn-primary">Read More</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card 12 -->
+    <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card book-card" data-bs-toggle="modal" data-bs-target="#modal12">
+            <img src="b12.jpg" class="card-img-top" alt="The Art of Living">
+            <div class="card-body">
+                <h5 class="card-title">The Art of Living</h5>
+                <p class="card-text">Thich Nhat Hanh</p>
+                <button class="btn btn-primary">Read More</button>
+            </div>
+        </div>
+    </div>
+    </div>
+  </div>
+
+<!--First Modals Section -->
+<!-- Modal 1 -->
+<div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modal1Label">The Miracle of Mindfulness</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="https://m.media-amazon.com/images/I/71Q8gm97H6L._AC_UF1000,1000_QL80_.jpg" class="img-fluid mb-3" alt="The Miracle of Mindfulness">
+                <p>This classic book by Zen master Thich Nhat Hanh is a beautiful introduction to mindfulness practice. It presents mindfulness as a practical skill that can transform everyday activities like washing dishes or drinking tea into opportunities for meditation and self-awareness.</p>
+                <p>This book helps cultivate mindfulness by teaching simple yet profound techniques to stay present in daily life. It offers practical exercises that can reduce stress, increase focus, and bring more joy to ordinary moments.</p>
+                <p>Author: Thich Nhat Hanh</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal 2 -->
+<div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="modal2Label" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modal2Label">Wherever You Go, There You Are</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="https://m.media-amazon.com/images/I/81S0D8VJURL._AC_UF1000,1000_QL80_.jpg" class="img-fluid mb-3" alt="Wherever You Go, There You Are">
+                <p>Jon Kabat-Zinn, the founder of Mindfulness-Based Stress Reduction (MBSR), explores the essence of mindfulness meditation and its application in everyday life. The book presents mindfulness not as a special activity but as a way of being.</p>
+                <p>This book helps develop mindfulness by offering short, accessible chapters with practical guidance. It teaches how to cultivate awareness in daily activities, reduce stress, and find peace amidst life's challenges.</p>
+                <p>Author: Jon Kabat-Zinn</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal 3 -->
+<div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="modal3Label" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modal3Label">Mindfulness in Plain English</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="https://m.media-amazon.com/images/I/71yYA6e-+VL._AC_UF1000,1000_QL80_.jpg" class="img-fluid mb-3" alt="Mindfulness in Plain English">
+                <p>Bhante Gunaratana's straightforward guide demystifies mindfulness meditation, explaining what it is, how to practice it, and what to expect from it. The book cuts through misconceptions and presents meditation in clear, practical terms.</p>
+                <p>This book enhances mindfulness by providing step-by-step instructions for Vipassana meditation. It helps develop concentration, awareness, and insight while addressing common obstacles and questions that arise in practice.</p>
+                <p>Author: Henepola Gunaratana</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal 4 -->
+<div class="modal fade" id="modal4" tabindex="-1" aria-labelledby="modal4Label" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modal4Label">Full Catastrophe Living</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="https://m.media-amazon.com/images/I/91dG5YqnHVL._AC_UF1000,1000_QL80_.jpg" class="img-fluid mb-3" alt="Full Catastrophe Living">
+                <p>This comprehensive guide by Jon Kabat-Zinn details the Mindfulness-Based Stress Reduction (MBSR) program developed at UMass Medical Center. It explores how mindfulness can help cope with stress, pain, and illness.</p>
+                <p>The book promotes mindfulness through structured meditation practices and insights into the mind-body connection. It offers scientifically validated techniques to reduce stress, manage chronic conditions, and improve overall wellbeing.</p>
+                <p>Author: Jon Kabat-Zinn</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Second Models Section -->
+<!-- Modal 5 -->
+<div class="modal fade" id="modal5" tabindex="-1" aria-labelledby="modal5Label" aria-hidden="true">
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="modal5Label">The Power of Now</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <img src="https://m.media-amazon.com/images/I/81s6DUyQCZL._AC_UF1000,1000_QL80_.jpg" class="img-fluid mb-3" alt="The Power of Now">
+              <p>Eckhart Tolle's spiritual guide emphasizes the importance of living in the present moment. The book explores how identification with thoughts and emotions creates suffering, and how presence can lead to inner peace.</p>
+              <p>This book enhances mindfulness by teaching readers to observe their thoughts without judgment, recognize the "pain-body," and access the timeless dimension of the Now. It helps break habitual thought patterns that cause stress and anxiety.</p>
+              <p>Author: Eckhart Tolle</p>
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+      </div>
+  </div>
+</div>
+
+<!-- Modal 6 -->
+<div class="modal fade" id="modal6" tabindex="-1" aria-labelledby="modal6Label" aria-hidden="true">
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="modal6Label">Radical Acceptance</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <img src="https://m.media-amazon.com/images/I/81jqUP1t+mL._AC_UF1000,1000_QL80_.jpg" class="img-fluid mb-3" alt="Radical Acceptance">
+              <p>Tara Brach combines Western psychology with Eastern spiritual practices to explore how self-judgment and feelings of unworthiness can be transformed through mindfulness and compassion.</p>
+              <p>This book fosters mindfulness by teaching the RAIN technique (Recognize, Allow, Investigate, Nurture) to work with difficult emotions. It helps develop self-compassion and break free from perfectionism and self-criticism.</p>
+              <p>Author: Tara Brach</p>
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+      </div>
+  </div>
+</div>
+
+<!-- Modal 7 -->
+<div class="modal fade" id="modal7" tabindex="-1" aria-labelledby="modal7Label" aria-hidden="true">
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="modal7Label">Peace Is Every Step</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <img src="https://m.media-amazon.com/images/I/71QeZ6yQYAL._AC_UF1000,1000_QL80_.jpg" class="img-fluid mb-3" alt="Peace Is Every Step">
+              <p>Thich Nhat Hanh shows how mindfulness can transform even mundane activities into opportunities for joy and peace. The book offers simple practices to cultivate awareness and compassion in daily life.</p>
+              <p>This book promotes mindfulness through "engaged Buddhism" - applying meditation principles to social action and everyday interactions. It teaches breathing exercises, mindful walking, and techniques to handle anger and conflict peacefully.</p>
+              <p>Author: Thich Nhat Hanh</p>
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+      </div>
+  </div>
+</div>
+
+<!-- Modal 8 -->
+<div class="modal fade" id="modal8" tabindex="-1" aria-labelledby="modal8Label" aria-hidden="true">
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="modal8Label">The Untethered Soul</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <img src="https://m.media-amazon.com/images/I/71QH-8QeEEL._AC_UF1000,1000_QL80_.jpg" class="img-fluid mb-3" alt="The Untethered Soul">
+              <p>Michael Singer explores the nature of consciousness and how to free oneself from limiting thoughts and emotions. The book guides readers toward inner peace through mindfulness and self-awareness.</p>
+              <p>This book enhances mindfulness by teaching how to observe thoughts and emotions without identifying with them. It offers practical methods to release mental patterns that create suffering and access a state of pure awareness.</p>
+              <p>Author: Michael A. Singer</p>
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+      </div>
+  </div>
+</div>
+
+<!-- Third Models Section -->
+<!-- Modal 9 -->
+<div class="modal fade" id="modal9" tabindex="-1" aria-labelledby="modal9Label" aria-hidden="true">
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="modal9Label">10% Happier</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <img src="https://m.media-amazon.com/images/I/71vRZ8+U6VL._AC_UF1000,1000_QL80_.jpg" class="img-fluid mb-3" alt="10% Happier">
+              <p>ABC news anchor Dan Harris recounts his skeptical journey into meditation after an on-air panic attack. The book presents mindfulness in a relatable, down-to-earth way for meditation skeptics.</p>
+              <p>This book makes mindfulness accessible by addressing common objections and showing its practical benefits. It helps reduce stress, improve focus, and develop emotional resilience without requiring spiritual beliefs.</p>
+              <p>Author: Dan Harris</p>
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+      </div>
+  </div>
+</div>
+
+<!-- Modal 10 -->
+<div class="modal fade" id="modal10" tabindex="-1" aria-labelledby="modal10Label" aria-hidden="true">
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="modal10Label">The Headspace Guide</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <img src="https://m.media-amazon.com/images/I/81S0D8VJURL._AC_UF1000,1000_QL80_.jpg" class="img-fluid mb-3" alt="The Headspace Guide">
+              <p>Andy Puddicombe, a former Buddhist monk and co-founder of Headspace, presents a modern approach to meditation. The book breaks down mindfulness into simple, practical exercises.</p>
+              <p>This book builds mindfulness through a structured 10-day program that teaches fundamental techniques. It helps develop focus, reduce stress, and cultivate a more balanced perspective on thoughts and emotions.</p>
+              <p>Author: Andy Puddicombe</p>
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+      </div>
+  </div>
+</div>
+
+<!-- Modal 11 -->
+<div class="modal fade" id="modal11" tabindex="-1" aria-labelledby="modal11Label" aria-hidden="true">
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="modal11Label">Real Happiness</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <img src="https://m.media-amazon.com/images/I/71QH-8QeEEL._AC_UF1000,1000_QL80_.jpg" class="img-fluid mb-3" alt="Real Happiness">
+              <p>Sharon Salzberg's guide to meditation presents a 28-day program to develop mindfulness and loving-kindness practices. The book blends traditional teachings with contemporary psychology.</p>
+              <p>This book enhances mindfulness through structured daily practices that cultivate awareness, compassion, and emotional balance. It's particularly helpful for developing self-acceptance and positive relationships with others.</p>
+              <p>Author: Sharon Salzberg</p>
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+      </div>
+  </div>
+</div>
+
+<!-- Modal 12 -->
+<div class="modal fade" id="modal12" tabindex="-1" aria-labelledby="modal12Label" aria-hidden="true">
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="modal12Label">The Art of Living</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <img src="https://m.media-amazon.com/images/I/81jqUP1t+mL._AC_UF1000,1000_QL80_.jpg" class="img-fluid mb-3" alt="The Art of Living">
+              <p>Thich Nhat Hanh interprets the Buddha's teachings through the lens of mindfulness practice. The book explores how to live with awareness, compassion, and peace in our modern world.</p>
+              <p>This book deepens mindfulness by connecting ancient wisdom with contemporary life. It offers insights and practices to transform suffering, cultivate joy, and develop interbeing - the understanding of our profound interconnection with all life.</p>
+              <p>Author: Thich Nhat Hanh</p>
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+      </div>
+  </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Footer Section -->
+<footer class="zen-footer">
+    <div class="container">
+      <div class="footer-content">
+        <!-- About Column -->
+        <div class="footer-column about-column">
+          <h3 class="footer-brand">Zen<span>Flow</span></h3>
+          <p class="footer-description">Your sanctuary for mindfulness and inner peace. Cultivate calm with our guided resources.</p>
+          <div class="footer-newsletter">
+            <h4>Stay Mindful</h4>
+            <form class="newsletter-form">
+              <input type="email" placeholder="Your peaceful email" required>
+              <button type="submit"><i class="fas fa-leaf"></i></button>
+            </form>
+          </div>
+        </div>
+  
+        <!-- Links Column -->
+        <div class="footer-column links-column">
+          <h4>Explore</h4>
+          <ul class="footer-links">
+            <li><a href="music.html"><i class="fas fa-music"></i> Sound Meditations</a></li>
+            <li><a href="journal.html"><i class="fas fa-book-open"></i> Mindful Journaling</a></li>
+            <li><a href="books.html"><i class="fas fa-book"></i> Wisdom Library</a></li>
+            <li><a href="tips.html"><i class="fas fa-lightbulb"></i> Mindfulness Tips</a></li>
+          </ul>
+        </div>
+  
+        <!-- Contact Column -->
+        <div class="footer-column contact-column">
+          <h4>Connect</h4>
+          <div class="contact-info">
+            <p><i class="fas fa-envelope"></i><a href="mailto:peace@zenflow.com" style="text-decoration: none; color: #fafafa;">edusn@zenflow.com</a></p>
+            <p><i class="fas fa-phone-alt"></i> +95 123 456 789</p>
+            <div class="social-links">
+              <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+              <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="footer-bottom">
+        <p>&copy; 2025 ZenFlow. All rights reserved. <span>Breathe deeply.</span></p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+/* Nature theme colors */
+
+.nature-text {
+  color: #2a7a2a; /* deep green */
+}
+
+.nature-list .list-group-item {
+  font-weight: 600;
+  color: #2a7a2a;
+  border-left: 5px solid transparent;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.nature-list .list-group-item:hover {
+  background-color: #d8f0d8;
+  border-left-color: #2a7a2a;
+  color: #1a4d1a;
+}
+/* Accordion button when opened (active) */
+.accordion-button:not(.collapsed) {
+  background-color: #2a7a2a; /* strong green background */
+  color: white; /* white text for contrast */
+  box-shadow: none;
+}
+
+/* Accordion button focus style (when clicking or tabbing) */
+.accordion-button:focus {
+  border-color: #2a7a2a;
+  box-shadow: 0 0 0 0.25rem #2a7a2a; /* green glow */
+}
